@@ -9,13 +9,14 @@ class MSBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.configureGradientLayer()
+        self.view.backgroundColor = UIColor.systemBlue
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = textAttributes
         navigationController?.navigationBar.tintColor = UIColor.white
 
         // Do any additional setup after loading the view.
     }
+
     
     
     func updateSubViewForData<T:Any>(data: T) {
